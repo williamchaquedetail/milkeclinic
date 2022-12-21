@@ -1,0 +1,53 @@
+.position
+{
+    position: relative;
+}
+
+.list-chat
+{
+    padding-right: 0;
+}
+.p-left
+{
+    padding-left:0;
+}
+.chat
+{
+    /* border: 1px solid black; */
+    height: 370px;
+    padding-left:0;
+    overflow-x: hidden;
+    overflow-y : scroll;
+}
+.message
+{
+    height: 70px;
+    width: 63%;
+}
+.message1
+{
+    height: 70px;
+    width: 63%;
+    margin-left: 117px;
+}
+
+.od
+{
+    display: block;
+    margin-left:10px ;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: url('../linoo.jpg');
+    background-size:100% 100%;
+}
+.wil
+{
+    display: block;
+    margin-left:14px ;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: url('../wil.jpg');
+    background-size:100% 100%;
+}

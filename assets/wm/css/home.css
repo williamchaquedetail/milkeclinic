@@ -1,0 +1,438 @@
+/* Univeersal */
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+/* ---- */
+/* Navigation and Header */
+.navcontain{
+    background: #fffafa;
+}
+.headerTitle
+{
+    width: 80%;
+    background-color: rgb(18, 18, 82);
+    color: #f1f1f1;
+    opacity: 70%;
+    position: absolute;
+    top: 30%;
+    left:10%;
+    text-align: center;
+    padding: 10px;
+}
+.headerTitle button {
+    color:#fff;
+    background: rgb(6, 61, 6);
+    padding:5px 50px;
+}
+.headerTitle button:hover{
+    color:#fff;
+    background: rgba(6, 61, 6, 0.336);
+}
+/* ---------- */
+/* Section 1 */
+.information
+{
+    width: 100%;
+    padding:30px 100px;
+    border-top:none;
+    border-right:none;
+    border-bottom:1px solid green;
+    border-left:1px solid green;
+}
+.information h1 span
+{
+    color: rgb(18, 18, 82);
+    font-weight: bold;
+    
+    
+}
+.information h1
+{
+    letter-spacing: 10px;
+}
+.information .box1 strong
+{
+    
+    color:rgb(18, 18, 82);
+}
+.information .box2
+{
+    padding-inline-start: 50px;
+}
+.information .box2 h3
+{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: 50px;
+   
+}
+
+.information .box2 p i
+{
+    font-size: 16px;
+    margin-inline-end: 10px;
+
+}
+/* --------------- */
+
+/* Section Spreciality */
+
+#speciality
+{
+    width: 100%;
+    height: 600px;
+    
+}
+.speciality-wapper
+{
+    height: 600px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background: rgb(173, 171, 171);
+}
+.speciality-1
+{
+    background-color: green;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+/* ----------------- */
+/* Section 2 */
+.item1{grid-area: section1;}
+.item2{grid-area: section2;}
+.item3{grid-area: section3;}
+.item4{grid-area: section4;}
+
+.grid-section
+{
+    display: grid;
+    height: 500px;
+    
+    overflow: hidden;
+    grid-template-areas:'section1 section1 section2 section2 section3 section3' 'section1 section1 section4 section4 section4 section4' ;
+
+}
+
+
+
+.grid-section > div:first-child{ 
+    background:url('../../images/flower.jpg') no-repeat center;
+    background-size: 100%;
+
+}
+.grid-section > div:nth-child(2),.grid-section > div:nth-child(3)
+{
+    background-color:rgb(18, 18, 82);
+    color: #fff;
+    position: relative;
+
+    
+}
+.grid-section > div:nth-child(2) p,.grid-section > div:nth-child(3) p 
+{
+    width: 80%;
+    height: 150px;
+    padding: 10px 10px;
+    font-size: 18px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+
+}
+@media(max-width:500px)
+{
+    .grid-section > div:nth-child(2) p,.grid-section > div:nth-child(3) p 
+{
+    width: 80%;
+    height: 150px;
+    padding: 10px 10px;
+    font-size: 18px;
+    position: absolute;
+    top: 9%;
+    left: 5%;
+
+}
+}
+.grid-section > div:nth-child(3)
+{
+    background-color:rgba(114, 111, 111, 0.767) ;
+    
+}
+.grid-section > div:last-child
+{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    
+}
+.grid-section > div:last-child p
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: rgb(74, 143, 74);
+    font-size: 25px;
+    padding: 80px 30px;
+} 
+/* -------------- */
+@media(max-width:768px) and (min-width:435px)
+{
+    .grid-section > div:last-child p
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: rgb(74, 143, 74);
+        font-size: 25px;
+        padding: 44px 30px;
+    } 
+}
+@media (max-width:435px)
+{
+    .grid-section > div:last-child p
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: rgb(74, 143, 74);
+        font-size: 25px;
+        padding: 17px 15px;
+    } 
+}
+/* Section 3 */
+#contact
+{
+    height: auto ;
+    background: url('../../images/haitisea.jpg') center no-repeat;
+    background-attachment: fixed;
+    padding: 40px 90px;
+    overflow: hidden;
+    
+}
+.contactInformation
+{
+    height: auto;
+    background: rgb(18, 18, 82) ;
+    opacity: 90%;
+    color: #f1f1f1;
+    padding: 40px 100px;
+}
+.contactLeft
+{
+    padding:0px 20px;
+}
+.contactLeft h1
+{
+    font-size: 22px;
+    font-weight: bold;
+}
+.contactRight h4
+{
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(18, 18, 82);
+}
+.contactLeft p{
+   font-size: 18px; 
+}
+.contactRight
+{
+    height: auto;
+    padding: 10px;
+    background: #f1f1f1;
+}
+.contactRight h1
+{
+    color: rgb(18, 18, 82);
+}
+.contactRight form button
+{
+    color:#fff;
+    padding:10px 30px;
+}
+/* ------------------------ */
+.dirigeant-wapper
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-block-start: 120px;
+}
+#aboutUs
+{
+    padding: 100px 200px;
+}
+
+.about p
+{
+    width:70%;
+}
+/* Footer */
+#footer
+{
+    background: rgb(18, 18, 82) ;
+    color: #fff;
+}
+#footer li {
+    list-style: none;
+    
+}
+#footer a
+{
+    text-decoration: none;
+    color:#fff;
+    font-size: 16px;
+}
+.social-links a i 
+{
+    color: #fff;
+    font-size: 25px;
+    margin-inline-end: 15px;
+    background: rgb(29, 175, 29);
+    border-radius: 30px;
+    padding: 7px;
+    transition: ease 0.9s;
+}
+.social-links a i:hover
+{
+    color: rgb(29, 175, 29);
+    background: #fff;
+}
+.logo span
+{
+    font-size: 20px;
+    margin: 7px;
+}
+/* Responsivite en dessus 768px */
+
+@media(max-width:768px)
+{
+    .information
+    {
+        width: 100%;
+        padding:30px 17px;
+        border-top:none;
+        border-right:none;
+        border-bottom:1px solid green;
+        border-left:1px solid green;
+    } 
+    .information .box2
+{
+    padding-inline-start: 13px;
+}
+.information .box2 h3
+{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+   
+}  
+
+.item1{grid-area: section1;}
+.item2{grid-area: section2;}
+.item3{grid-area: section3;}
+.item4{grid-area: section4;}
+
+.grid-section
+{
+    display: grid;
+    height: 800px;
+    overflow: hidden;
+    grid-template-areas:'section1 section1 section1 section1 section1 section1' 'section2 section2 section2 section2 section2 section2''section3 section3 section3 section3 section3 section3''section4 section4 section4 section4 section4 section4' ;
+     /* gap: 10px; */
+    /* background-color:rgb(18, 18, 82); */
+}
+#contact
+{
+    height: auto;
+    background: url('../../images/haitisea.jpg') center no-repeat;
+    background-attachment: fixed;
+    padding: 10px 30px;
+    
+} 
+.contactLeft
+{
+    padding:0px 20px;
+    overflow: hidden ;
+}
+.contactInformation
+{
+    height: auto;
+    background: rgb(18, 18, 82) ;
+    opacity: 90%;
+    color: #f1f1f1;
+    padding: 40px 22px;
+}
+#aboutUs
+{
+    padding: 100px 32px;
+}
+.dirigeant-wapper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-block-start: 120px;
+}
+.dirigeant-item
+{
+    margin-block-end: 55px;
+}
+.about p
+{
+    width:100%;
+}
+}
+/* --------------------------- */
+/* Responsivite depuis 768px a 1200px */
+@media(max-width:1200px) and (min-width:768px)
+{
+    .item1{grid-area: section1;}
+    .item2{grid-area: section2;}
+    .item3{grid-area: section3;}
+    .item4{grid-area: section4;}
+    
+    .grid-section
+    {
+        display: grid;
+        height: 800px;
+        overflow: hidden;
+        grid-template-areas:'section1 section1 section1 section1 section1 section1' 'section2 section2 section2 section3 section3 section3''section4 section4 section4 section4 section4 section4' ;
+         /* gap: 10px; */
+        /* background-color:rgb(18, 18, 82); */
+    }
+
+    .contactInformation
+{
+    height: auto;
+    background: rgb(18, 18, 82) ;
+    opacity: 90%;
+    color: #f1f1f1;
+    padding: 40px 20px;
+}
+#aboutUs
+{
+    padding: 100px 60px;
+}
+.dirigeant-wapper
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-block-start: 120px;
+}
+.about p
+{
+    width:100%;
+}
+}
+/* ------------- */
